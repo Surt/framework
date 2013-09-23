@@ -60,6 +60,17 @@ class CacheManager extends Manager {
 		return $this->repository(new WinCacheStore($this->getPrefix()));
 	}
 
+
+	/**
+	 * Create an instance of the XCache cache driver.
+	 *
+	 * @return \Illuminate\Cache\XCacheStore
+	 */
+	protected function createXcacheDriver()
+	{
+		return $this->repository(new XcacheStore($this->getPrefix()));
+	}
+
 	/**
 	 * Create an instance of the Redis cache driver.
 	 *
