@@ -10,7 +10,7 @@ class XcacheStore implements StoreInterface {
 	protected $prefix; 
  
 	/**
-	 * Create a new WinCache store.
+	 * Create a new XCache store.
 	 *
 	 * @param  string     $prefix
 	 * @return void
